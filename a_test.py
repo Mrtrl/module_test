@@ -7,7 +7,8 @@ from starlette.datastructures import UploadFile
 def test():
     f = open('./.gitignore', 'rb')
     upload_file = UploadFile('gitignorefile', f, content_type='text')
-    print(upload_file.content_type)
+
+    data = upload_file.read()
 
 
 if __name__ == '__main__':
