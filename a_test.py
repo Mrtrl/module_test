@@ -9,7 +9,6 @@ def test():
     upload_file = UploadFile('gitignorefile', f, content_type='text')
 
     data = upload_file.read()
-    print(upload_file.filename)
 
 
 if __name__ == '__main__':
